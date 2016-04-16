@@ -4,6 +4,5 @@ class Node():
 		self.right_child = None
 		self.feature = None
 		self.threshold = None
-		self.impurity = 1.0
-		self.n_samples = None
+		self.impurity = 100000000000.0
 		self.value = None
