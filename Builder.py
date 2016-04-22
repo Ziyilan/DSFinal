@@ -1,6 +1,4 @@
 class Builder():
-	def __init__(self):
-
 	def build(self, dataset, predict_on, max_depth=5):
 		root = Node()
 		s = Splitter()
@@ -9,7 +7,7 @@ class Builder():
 		feature = random.choice(features)
 		split_index, split_impurity, orig_impurity = Splitter.split(dataset, feature)
 		threshold = (1.0/len(dataset))
-		root.threshold = threshold
+		root.split_index = split_index
 		if (max_depth>0) and (split_index!=0) and ((orig_impurity-split_impurity)>threshold):
 			root.feature = feature
 			root.left_child = self.build(dataset[:split_index], max_depth-1)

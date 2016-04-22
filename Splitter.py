@@ -1,6 +1,4 @@
 class Splitter():
-	def __init__(self):
-
 	def split(self, dataset, feature):
 		c = Criterion()
 		dataset = dataset.sort(feature)
