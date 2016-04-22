@@ -1,3 +1,4 @@
+import Criterion
 class Splitter():
 	def split(self, dataset, feature):
 		c = Criterion()

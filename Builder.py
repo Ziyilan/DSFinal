@@ -1,3 +1,6 @@
+import random
+import Node
+import Splitter
 class Builder():
 	def build(self, dataset, predict_on, max_depth=5):
 		root = Node()
@@ -15,6 +18,4 @@ class Builder():
 		else:
 			lst = list(dataset[predict_on])
 			root.value = max(set(lst), key=lst.count)
-			#either this or average over the list
-			#in which case we would let the user decide their "pivot point"
 		return root

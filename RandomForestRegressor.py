@@ -1,3 +1,4 @@
+import Builder
 class RandomForestRegressor():
 	def __init__(self, train_data, predict_on, n_trees=20, max_depth=5):
 		self.train_data = train_data
