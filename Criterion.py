@@ -14,9 +14,9 @@ class Criterion():
 					impurity += f1*f2
 		return impurity
 
-if __name__ == "__main__":
-	import pandas as pd
-	c = Criterion()
-	data = pd.DataFrame({'c1':[1,1,3,2],'c2':[2,3,2,2],'p':[1,1,0,0]})
-	for each in data.columns:
-		print 'impurity for ' + each + ': ' + str(c.gini_impurity(data, each))
+# if __name__ == "__main__":
+# 	import pandas as pd
+# 	c = Criterion()
+# 	data = pd.DataFrame({'c1':[1,1,3,2],'c2':[2,3,2,2],'p':[1,1,0,0]})
+# 	for each in data.columns:
+# 		print 'impurity for ' + each + ': ' + str(c.gini_impurity(data, each))
